@@ -60,6 +60,7 @@ COMMIT COMMANDS
 | **git commit --amend --no-edit** | `git commit --amend --no-edit` | Modifies the most recent commit but keeps the existing commit message |
 
 ![COMMIT](screenshots/commit.png)
+![COMMIT](screenshots/commit1.png)
 
 BRANCH MANAGEMENT CONTROLS
 | Command | What It Does | Example | When To Use |
@@ -72,4 +73,5 @@ BRANCH MANAGEMENT CONTROLS
 | `git checkout -b <branch>` | Creates a new branch AND switches to it | `git checkout -b feature/signup` | When creating a new feature branch |
 | `git switch <branch>` | Switches to an existing branch (newer, clearer command) | `git switch main` | Modern alternative to checkout |
 | `git switch -c <branch>` | Creates a new branch AND switches to it (modern way) | `git switch -c feature/signup` | Recommended way to create + switch |
+
 ![COMMIT](screenshots/branch.png)
