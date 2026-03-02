@@ -96,3 +96,4 @@ EXAMPLE
 git clone --depth 1 https://github.com/username/project.git
 
 REPOSITORY STATUS AND INSPECTION
+git add -p stages part by part not whole
