@@ -108,13 +108,14 @@ REMOTE REPOSITORY COMMANDS
 ![REMOTE](screenshots/remote3.png)
 
 STASH COMMANDS
-| Command                     | What It Does                                                | Example                     | Result                                |
+| Command | What It Does | Example | Result |
 | --------------------------- | ----------------------------------------------------------- | --------------------------- | ------------------------------------- |
-| `git stash`                 | Saves uncommitted changes and makes working directory clean | `git stash`                 | Changes are stored temporarily        |
-| `git stash list`            | Shows all saved stashes                                     | `git stash list`            | Displays `stash@{0}`, `stash@{1}` etc |
-| `git stash pop`             | Restores latest stash **and deletes it**                    | `git stash pop`             | Changes restored + stash removed      |
-| `git stash apply`           | Restores stash but **keeps it saved**                       | `git stash apply`           | Changes restored + stash still exists |
-| `git stash apply stash@{1}` | Applies a specific stash                                    | `git stash apply stash@{1}` | That particular stash is restored     |
-| `git stash drop`            | Deletes a specific stash                                    | `git stash drop stash@{0}`  | Removes only that stash               |
-| `git stash clear`           | Deletes **all** stashes permanently                         | `git stash clear`           | All stashes removed                   |
+| `git stash` | Saves uncommitted changes and makes working directory clean | `git stash` | Changes are stored temporarily |
+| `git stash list` | Shows all saved stashes | `git stash list` | Displays `stash@{0}`, `stash@{1}` etc |
+| `git stash pop` | Restores latest stash **and deletes it** | `git stash pop` | Changes restored + stash removed |
+| `git stash apply` | Restores stash but **keeps it saved** | `git stash apply` | Changes restored + stash still exists |
+| `git stash apply stash@{1}` | Applies a specific stash | `git stash apply stash@{1}` | That particular stash is restored |
+| `git stash drop` | Deletes a specific stash | `git stash drop stash@{0}` | Removes only that stash |
+| `git stash clear` | Deletes **all** stashes permanently | `git stash clear` | All stashes removed |
 
+![STASH](screenshots/stash.png)
