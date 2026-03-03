@@ -119,3 +119,18 @@ STASH COMMANDS
 | `git stash clear` | Deletes **all** stashes permanently | `git stash clear` | All stashes removed |
 
 ![STASH](screenshots/stash.png)
+
+RESET AND UNDO COMMANDS
+| Command | What It Does | Affects Commit History? | Affects Staging Area? | Affects Working Directory? | Example |
+| ------------------- | ----------------------------------------------------- | ----------------------- | --------------------- | -------------------------- | -------------------------- |
+| `git reset` | Moves HEAD to a previous commit (default = `--mixed`) | ✅ Yes | ✅ Yes (unstage files) | ❌ No | `git reset HEAD~1` |
+| `git reset --soft` | Moves HEAD but keeps changes staged | ✅ Yes | ❌ No | ❌ No | `git reset --soft HEAD~1` |
+| `git reset --mixed` | Moves HEAD and unstages changes (default) | ✅ Yes | ✅ Yes | ❌ No | `git reset --mixed HEAD~1` |
+| `git reset --hard` | Moves HEAD and deletes all changes | ✅ Yes | ✅ Yes | ✅ Yes | `git reset --hard HEAD~1` |
+| `git revert` | Creates a new commit that undoes a previous commit | ❌ No (adds new commit) | ❌ No | ❌ No | `git revert HEAD` |
+| `git clean -f` | Deletes untracked files | ❌ No | ❌ No | ✅ Yes (untracked only) | `git clean -f` |
+| `git clean -fd` | Deletes untracked files and folders | ❌ No | ❌ No | ✅ Yes (files + folders) | `git clean -fd` |
+
+![RESET](screenshots/reset.png)
+![RESET](screenshots/reset2.png)
+![RESET](screenshots/reset3.png)
