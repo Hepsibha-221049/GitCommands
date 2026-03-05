@@ -134,3 +134,24 @@ RESET AND UNDO COMMANDS
 ![RESET](screenshots/reset.png)
 ![RESET](screenshots/reset2.png)
 ![RESET](screenshots/reset3.png)
+
+REBASING COMMANDS
+| Command | What It Does | When Used |
+| ----------------------- | -------------------------------------------------- | -------------------------------------- |
+| `git rebase <branch>` | Moves your branch commits on top of another branch | Update feature branch with latest main |
+| `git rebase -i` | Interactive rebase (edit/squash/reorder commits) | Clean commit history |
+| `git rebase --continue` | Continue rebase after resolving conflicts | After fixing merge conflicts |
+| `git rebase --abort` | Cancel rebase and go back to original state | If rebase goes wrong |
+
+![REBASE](screenshots/rebase.png)
+![REBASE](screenshots/rebase2.png)
+
+Cherry Pick & Patch Commands
+| Command | Purpose | Creates Commit | Example |
+| ------------------ | ------------------------------------------ | -------------- | -------------------------- |
+| `git cherry-pick` | Copy a specific commit from another branch | Yes | `git cherry-pick 5a3c2b` |
+| `git format-patch` | Convert commits into patch files | No | `git format-patch -1 HEAD` |
+| `git apply` | Apply patch to working directory | No | `git apply fix.patch` |
+| `git am` | Apply patch and create commit | Yes | `git am fix.patch` |
+
+![CHERRY](screenshots/cherry.png)
