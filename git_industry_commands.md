@@ -172,3 +172,16 @@ SUBMODULES
 | **`git submodule add`** | Add another repository as a submodule | This command adds an external Git repository inside your current repository as a folder. Git stores the submodule reference in `.gitmodules`. | `git submodule add https://github.com/user/library.git libs/library` |
 | **`git submodule init`** | Initialize submodules | After cloning a repository that contains submodules, this command registers the submodule URLs from `.gitmodules` into `.git/config`. | `git submodule init` |
 | **`git submodule update`** | Download the submodule content | This command fetches and checks out the specific commit of the submodule that the main repository expects. | `git submodule update` |
+
+![TAGS](sreenshots/submodule.png)
+![TAGS](sreenshots/submodule2.png)
+
+BISECTING COMMANDS
+| Command | Purpose |
+| ------------------ | ------------------------------------ |
+| `git bisect` | Debugging tool to find bug commit |
+| `git bisect start` | Start bisect process |
+| `git bisect bad` | Mark commit where bug exists |
+| `git bisect good` | Mark commit where bug does not exist |
+
+![BISECT](sreenshots/bisect.png)
