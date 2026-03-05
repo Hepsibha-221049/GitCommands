@@ -155,3 +155,20 @@ Cherry Pick & Patch Commands
 | `git am` | Apply patch and create commit | Yes | `git am fix.patch` |
 
 ![CHERRY](screenshots/cherry.png)
+
+Tagging Commands
+| Command | Purpose | Syntax | Example | Explanation |
+| -------------------------- | ------------------------------------------------------- | ------------------------------------ | ------------------------------------ | -------------------------------------------------- |
+| **git tag** | Lists all tags in the repository | `git tag` | `git tag` | Shows all existing tags in the project. |
+| **git tag -a** | Creates an **annotated tag** (recommended for releases) | `git tag -a <tag-name> -m "message"` | `git tag -a v1.0 -m "First release"` | Creates a tag with author name, date, and message. |
+| **git tag -d** | Deletes a tag from the **local repository** | `git tag -d <tag-name>` | `git tag -d v1.0` | Removes the tag locally (not from remote). |
+| **git push origin --tags** | Pushes **all local tags** to the remote repository | `git push origin --tags` | `git push origin --tags` | Sends all tags to GitHub or remote repository. |
+
+![TAGS](sreenshots/tags.png)
+
+SUBMODULES
+| Command | Purpose | Explanation | Example |
+| -------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **`git submodule add`** | Add another repository as a submodule | This command adds an external Git repository inside your current repository as a folder. Git stores the submodule reference in `.gitmodules`. | `git submodule add https://github.com/user/library.git libs/library` |
+| **`git submodule init`** | Initialize submodules | After cloning a repository that contains submodules, this command registers the submodule URLs from `.gitmodules` into `.git/config`. | `git submodule init` |
+| **`git submodule update`** | Download the submodule content | This command fetches and checks out the specific commit of the submodule that the main repository expects. | `git submodule update` |
